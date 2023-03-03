@@ -1,0 +1,137 @@
+.lista_fundo {
+    display: flex;
+    background-image: url(../img/fundo_lista.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    height: 600px;
+}
+
+.lista_caixa {
+    display: flex;
+    width: 1080px;
+    justify-content: space-between;
+}
+.lista_titulo {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-top: 75px;
+}
+
+.lista {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    gap: 5px;
+    width: 500px;
+}
+
+.lista i {
+    color: #fff;
+}
+
+.lista p {
+    color: #fff;
+    display: inline;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+    margin: 25px 0;
+    text-align: start;
+    width: 450px;
+}
+.lista_fundo a {
+    align-items: center;
+    background: transparent;
+    border: 1px solid rgb(213, 186, 186);
+    border-radius: 16px;
+    color: #fff;
+    display: flex;
+    height: 2rem;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    width: 20%;
+}
+.lista_fundo a:hover {
+    cursor: pointer;
+    background: rgb(219, 180, 180);
+    height: 2.3rem;
+}
+
+.lista img {
+    display: inline;
+}
+
+@media screen and (max-width: 1080px) {
+    .lista_caixa {
+        width: auto;
+        justify-content: space-between;
+    }
+
+    .lista {
+        width: 400px;
+    }
+
+    .lista p {
+        width: 370px;
+    }
+
+    .lista img {
+        width: 30px;
+    }
+}
+
+@media screen and (max-width: 915px) {
+    .lista_caixa {
+        max-width: 560px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .lista_fundo a {
+        margin-bottom: 10px;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .container {
+        max-width: 370px;
+    }
+    .lista_fundo {
+        height: auto;
+    }
+    .lista_caixa {
+       max-width: 360px;
+    }
+
+    .lista_titulo {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    .lista {
+        width: 300px;
+    }
+
+    .lista p {
+        font-size: 1rem;
+        width: 274px;
+    }
+
+    .lista img {
+        width: 30px;
+    }
+
+    .lista_fundo a {
+        margin-bottom: 10px;
+        width: 50%;
+    }
+}

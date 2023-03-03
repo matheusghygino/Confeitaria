@@ -1,0 +1,133 @@
+@import url(reset.css);
+@import url(estilo.css);
+@import url(formulario.css);
+@import url(card.css);
+@import url(lista.css);
+@import url(cardH.css);
+
+.container {
+    max-width: 1080px;
+    margin: auto;
+}
+
+.principal {
+    background-image: url(../img/FundoPrincipal.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 100%;
+    padding-left: 100px;
+}
+
+.logo {
+    margin-left: 50px;
+    margin-top: 50px;
+    width: 100px;
+}
+
+/*        Seção agenda       */
+
+.secao_agenda {
+    height: 600px;
+}
+
+.agenda{
+    display: flex;
+    flex-direction: column;
+}
+
+.agenda_titulo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin: 75px auto 25px auto;
+    color: rgb(222, 15, 129);
+}
+
+@media screen and (max-width: 1010px) {
+    .principal {
+    background-image: url(../img/FundoPrincipalMobile.png);
+    padding-left: 0;
+    }
+
+    .logo {
+        margin-right: 280px;   
+    }
+}
+@media screen and (max-width: 800px) {
+    .secao_agenda {
+        height: auto;
+        margin-bottom: 25px;
+    }
+}
+
+/* seção o que falam */
+
+.secao_oque_falam {
+    align-items: center;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.secao_oque_falam h1 {
+    font-size: 2.5rem;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.caixa_oque_falam1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
+    width: 500px;
+}
+
+.caixa_oque_falam2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 100px;
+    width: 500px;
+}
+
+.btn {
+    border-radius: 8px;
+    background: rgb(223, 96, 96);
+    border: 1px solid black;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 5px;
+    width: 50%;
+    text-align: center;
+}
+
+.btn:hover {
+    background: rgba(223, 96, 96, 0.763);
+}
+
+.m {
+    margin-top: 5px;
+}
+
+
+@media screen and (max-width: 1010px) {
+    .secao_oque_falam {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .caixa_oque_falam1 {
+        align-items: center;
+        margin-top: 25px;
+        padding: 0;
+    }
+
+    .caixa_oque_falam2 {
+        align-items: center;
+        margin: 0 0 25px 0;
+    }
+}
+
